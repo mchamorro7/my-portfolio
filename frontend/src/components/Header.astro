@@ -1,0 +1,16 @@
+---
+import { isNavActive } from '@utils/index'
+
+const { pathname: current } = Astro.url
+---
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="" class={isNavActive(current, '/')}>Portfolio</a></li>
+      <li><a href="/about" class={isNavActive(current, '/about')}>About</a></li>
+      <li><a href="/blog" class={isNavActive(current, '/blog')}>Blog</a></li>
+      <li><a href="mailto:mateochamo1@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+</header>

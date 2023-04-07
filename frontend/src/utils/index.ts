@@ -1,0 +1,1 @@
+export const isNavActive = (currentPath: string, path: string) => currentPath === path ? 'active' : '';

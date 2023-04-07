@@ -1,0 +1,8 @@
+html {
+  font-family: theme(fontFamily.body);
+  background-color: theme(colors.secondary);
+}
+
+.active {
+  color: theme(colors.primary);
+}
