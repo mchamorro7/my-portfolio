@@ -28,7 +28,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
       </div>
       <aside
         className="relative z-50">
-        <div className={`${visible ? 'w-full' : 'w-0'} duration-500 fixed top-0 left-0 bottom-0 flex flex-col w-full bg-secondary overflow-y-auto`}>
+        <div className={`${visible ? 'w-full' : 'w-0'} duration-500 fixed top-0 left-0 bottom-0 flex flex-col bg-secondary overflow-y-auto`}>
           <div className="flex justify-end p-6">
             <button onClick={() => setVisible(!visible)}>
               <svg
@@ -38,9 +38,9 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
                 viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             </button>
