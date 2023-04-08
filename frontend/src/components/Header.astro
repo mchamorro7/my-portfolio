@@ -1,0 +1,20 @@
+---
+import { isRouteActive } from '@utils/index'
+import { MobileMenu } from './MobileMenu';
+
+const { pathname: current } = Astro.url
+---
+
+<header class="container mx-auto md:p-0">
+  <MobileMenu currentPath={current} client:load />
+  <nav class="hidden md:flex md:justify-center py-8">
+    <ul class="flex px-4 border border-x-neutral-400 border-y-neutral-200 rounded-3xl">
+      <li><a href="/" class={`${isRouteActive(current, '/')} mr-8`}>Portfolio</a></li>
+      <li>
+        <a href="/about" class={`${isRouteActive(current, '/about')} mr-8`}>About</a>
+      </li>
+      <li><a href="/blog" class={`${isRouteActive(current, '/blog')} mr-8`}>Blog</a></li>
+      <li><a href="mailto:mateochamo1@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+</header>
