@@ -1,1 +1,2 @@
-export const isNavActive = (currentPath: string, path: string) => currentPath === path ? 'active' : '';
+export const isRouteActive = (currentPath: string, path: string) =>
+  currentPath === path ? 'active' : '';

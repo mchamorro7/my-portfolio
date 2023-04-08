@@ -1,6 +1,7 @@
 html {
   font-family: theme(fontFamily.body);
   background-color: theme(colors.secondary);
+  color: theme(colors.white);
 }
 
 .active {
