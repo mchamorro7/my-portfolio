@@ -1,0 +1,60 @@
+---
+import Project from './Project.astro'
+
+interface Project {
+  title: string;
+  description: string;
+  date: string;
+  stack: Array<string>;
+  code?: string;
+  demo?: string;
+}
+
+// TODO: Use sanity project's collection
+const projects: Array<Project> = [
+  {
+    title: 'Application',
+    date: '03/2023',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    stack: ['React.js', 'Node.js'],
+    code: 'https://github.com/mchamorro7',
+    demo: 'https://mateochamorro.dev'
+  },
+  {
+    title: 'Application',
+    date: '03/2023',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    stack: ['React.js', 'Node.js'],
+    code: 'https://github.com/mchamorro7',
+    demo: 'https://mateochamorro.dev'
+  },
+  {
+    title: 'Application',
+    date: '03/2023',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    stack: ['React.js', 'Node.js'],
+    code: 'https://github.com/mchamorro7',
+    demo: 'https://mateochamorro.dev'
+  },
+  {
+    title: 'Application',
+    date: '03/2023',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    stack: ['React.js', 'Node.js'],
+    code: 'https://github.com/mchamorro7',
+    demo: 'https://mateochamorro.dev'
+  },
+]
+---
+
+<section class="mb-20">
+  <h2 class="font-title text-2xl md:text-4xl ">Last projects</h2>
+  <div class="w-10 border-b-4 mt-3 mb-10 border-primary"></div>
+  <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    {projects.map((props) => <Project {...props} />)}
+  </div>
+</section>
