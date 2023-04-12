@@ -1,0 +1,34 @@
+---
+const { title, description, date, code, demo, stack } = Astro.props
+---
+
+<a href={demo ?? '#'}>
+  <article class="project border border-primary hover:scale-105">
+    <div class="p-4">
+      <h5 class="font-title font-regular text-primary text-lg md:text-2xl mb-2">
+        {title}
+      </h5>
+      <p class="font-light mb-2">{description}</p>
+      <p class="text-xs">{date}</p>
+      {
+        stack.length > 0 && (
+          <div class="flex flex-wrap gap-1 mt-4">
+            {stack.map((tech) => (
+              <p class="badge px-1 text-primary">{tech}</p>
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </article>
+</a>
+<style>
+  .project {
+    border-radius: 16px;
+    min-height: 250px;
+  }
+  .badge {
+    border: 0.3px solid theme(colors.primary);
+    border-radius: 10px;
+  }
+</style>
