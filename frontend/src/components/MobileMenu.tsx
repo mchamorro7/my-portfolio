@@ -10,7 +10,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
 
   return (
     <>
-      <div className="md:hidden p-6 flex justify-end">
+      <div className="md:hidden flex justify-end">
         <button onClick={() => setVisible(!visible)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
