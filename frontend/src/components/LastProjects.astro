@@ -11,7 +11,7 @@ interface Project {
 }
 
 // TODO: Use sanity project's collection
-const projects: Array<Project> = [
+const lastProjects: Array<Project> = [
   {
     title: 'Application',
     date: '03/2023',
@@ -55,6 +55,6 @@ const projects: Array<Project> = [
   <h2 class="font-title text-2xl md:text-4xl ">Last projects</h2>
   <div class="w-10 border-b-4 mt-3 mb-10 border-primary"></div>
   <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4">
-    {projects.map((props) => <Project {...props} />)}
+    {lastProjects.map((props) => <Project {...props} />)}
   </div>
 </section>
