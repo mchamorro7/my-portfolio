@@ -11,11 +11,11 @@ const { pathname: current } = Astro.url
     <ul
       class="flex px-4 border border-x-neutral-400 border-y-neutral-200 rounded-3xl">
       <li>
-        <a href="/" class={`${isRouteActive(current, '/')} mr-8`}>Portfolio</a>
+        <a href="/" class={`${isRouteActive(current, '/')} mr-8`}>Home</a>
       </li>
       <li>
-        <a href="/about" class={`${isRouteActive(current, '/about')} mr-8`}
-          >About</a
+        <a href="/projects" class={`${isRouteActive(current, '/projects')} mr-8`}
+          >Projects</a
         >
       </li>
       <li>
@@ -28,6 +28,6 @@ const { pathname: current } = Astro.url
 </header>
 <style>
   header nav a:hover {
-    opacity: 0.85;
+    opacity: 0.80;
   }
 </style>

@@ -6,13 +6,13 @@ const { pathname: current } = Astro.url
 
 <footer
   class="container mx-auto max-w-5xl flex justify-center py-9 border-t-2 border-white">
-  <a href="/" class={`${isRouteActive(current, '/')} mr-8`}>Portfolio</a>
-  <a href="/about" class={`${isRouteActive(current, '/about')} mr-8`}>About</a>
+  <a href="/" class={`${isRouteActive(current, '/')} mr-8`}>Home</a>
+  <a href="/projects" class={`${isRouteActive(current, '/projects')} mr-8`}>Projects</a>
   <a href="/blog" class={`${isRouteActive(current, '/blog')} mr-8`}>Blog</a>
   <a href="mailto:mateochamo1@gmail.com">Contact</a>
 </footer>
 <style>
   footer a:hover {
-    opacity: 0.85;
+    opacity: 0.80;
   }
 </style>

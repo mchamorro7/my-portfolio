@@ -51,10 +51,13 @@ const lastProjects: Array<Project> = [
 ]
 ---
 
-<section class="mb-20">
+<section class="mb-10">
   <h2 class="font-title text-2xl md:text-4xl ">Last projects</h2>
   <div class="w-10 border-b-4 mt-3 mb-10 border-primary"></div>
   <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4">
     {lastProjects.map((props) => <Project {...props} />)}
+  </div>
+  <div class="flex justify-center md:justify-end">
+    <a href="/projects" class="text-primary font-light mt-6 hover:opacity-80">See all</a>
   </div>
 </section>
