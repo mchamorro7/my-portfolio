@@ -25,19 +25,13 @@ export default defineType({
     defineField({
       name: 'from',
       title: 'From',
-      type: 'date',
-      options: {
-        dateFormat: 'YYYY-MM'
-      },
+      type: 'string',
       validation: Rule => Rule.required()
     }),
     defineField({
         name: 'to',
         title: 'To',
-        type: 'date',
-        options: {
-          dateFormat: 'YYYY-MM'
-        },
+        type: 'string',
         validation: Rule => Rule.required()
     }),
     defineField({

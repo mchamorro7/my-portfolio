@@ -20,10 +20,7 @@ export default defineType({
     defineField({
       name: 'date',
       title: 'Date',
-      type: 'date',
-      options: {
-        dateFormat: 'YYYY-MM'
-      },
+      type: 'string',
       validation: Rule => Rule.required()
     }),
     defineField({
