@@ -13,7 +13,7 @@ const { title, description, date, code, demo, stack } = Astro.props
       {
         stack.length > 0 && (
           <div class="flex flex-wrap gap-1 mt-4">
-            {stack.map((tech) => (
+            {stack.map((tech: string) => (
               <p class="badge px-1 text-primary">{tech}</p>
             ))}
           </div>
