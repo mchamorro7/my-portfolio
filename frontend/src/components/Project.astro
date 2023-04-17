@@ -1,8 +1,8 @@
 ---
-const { title, description, date, code, demo, stack } = Astro.props
+const { title, description, date, code, stack } = Astro.props
 ---
 
-<a href={demo ?? '#'}>
+<a href={code ?? '#'}>
   <article class="project border border-primary hover:scale-105">
     <div class="p-4">
       <h5 class="font-title font-regular text-primary text-lg md:text-2xl mb-2">
