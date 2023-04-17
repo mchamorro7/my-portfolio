@@ -10,45 +10,13 @@ interface Job {
   to: string;
 }
 
-// TODO: Use sanity jobs collection
-const lastJobs: Array<Job> = [
-  {
-    company: 'Mercado Libre',
-    position: 'Semi-senior Software Engineer',
-    logo: 'https://http2.mlstatic.com/static/org-img/homesnw/mercado-libre.png?v=2',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    from: 'Ene 2022',
-    to: 'Today'
-  },
-  {
-    company: 'Mercado Libre',
-    position: 'Semi-senior Software Engineer',
-    logo: 'https://http2.mlstatic.com/static/org-img/homesnw/mercado-libre.png?v=2',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',    from: 'Ene 2022',
-    to: 'Today'
-  },
-  {
-    company: 'Mercado Libre',
-    position: 'Semi-senior Software Engineer',
-    logo: 'https://http2.mlstatic.com/static/org-img/homesnw/mercado-libre.png?v=2',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',    from: 'Ene 2022',
-    to: 'Today'
-  },
-  {
-    company: '',
-    position: '',
-    logo: '',
-    description: '',
-    from: '',
-    to: ''
-  },
-]
+const { jobs } = Astro.props
 ---
 
 <section class="mb-20">
   <h2 class="font-title text-2xl md:text-4xl">Experience</h2>
   <div class="w-10 border-b-4 mt-3 mb-10 border-primary"></div>
   <ul>
-    {lastJobs.map((props) => <JobItem {...props} />)}
+    {jobs.map((props: Job) => <JobItem {...props} />)}
   </ul>
 </section>
