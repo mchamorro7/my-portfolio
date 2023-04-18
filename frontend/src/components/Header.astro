@@ -14,13 +14,15 @@ const { pathname: current } = Astro.url
         <a href="/" class={`${isRouteActive(current, '/')} mr-8`}>Home</a>
       </li>
       <li>
-        <a href="/projects" class={`${isRouteActive(current, '/projects')} mr-8`}
-          >Projects</a
+        <a
+          href="/projects"
+          class={`${isRouteActive(current, '/projects')} mr-8`}>Projects</a
         >
       </li>
       <li>
         <a href="/blog" class={`${isRouteActive(current, '/blog')} mr-8`}
-          >Blog</a>
+          >Blog</a
+        >
       </li>
       <li><a href="mailto:mateochamo1@gmail.com">Contact</a></li>
     </ul>
@@ -28,6 +30,6 @@ const { pathname: current } = Astro.url
 </header>
 <style>
   header nav a:hover {
-    opacity: 0.80;
+    opacity: 0.8;
   }
 </style>

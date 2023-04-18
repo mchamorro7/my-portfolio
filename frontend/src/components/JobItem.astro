@@ -1,9 +1,11 @@
 ---
 const { company, position, logo, description, from, to } = Astro.props
+
+const logoUrl = logo?.asset?.url;
 ---
 
 <li class="flex gap-4 mb-6">
-  {logo ? <img class="logo" src={logo} /> : <div class="logo bg-slate-200"></div>}
+  {logo ? <img class="logo" src={logoUrl} /> : <div class="logo bg-slate-200"></div>}
   <div class="flex flex-col">
     <h4 class="font-bold text-xl">{company}</h4>
     <div class="flex flex-col md:flex-row font-normal">
