@@ -1,24 +1,38 @@
 ---
-const { company, position, logo, description, from, to } = Astro.props
+import PortableText from './PortableText.astro'
 
-const logoUrl = logo?.asset?.url;
+const { company, position, logo, descriptionRaw, from, to } = Astro.props
+
+const logoUrl = logo?.asset?.url
 ---
 
 <li class="flex gap-4 mb-6">
-  {logo ? <img class="logo" src={logoUrl} /> : <div class="logo bg-slate-200"></div>}
+  {
+    logo ? (
+      <img class="logo" src={logoUrl} />
+    ) : (
+      <div class="logo bg-slate-200" />
+    )
+  }
   <div class="flex flex-col">
     <h4 class="font-bold text-xl">{company}</h4>
     <div class="flex flex-col md:flex-row font-normal">
       <p>{position}</p>
       <span class="md:ml-6">{from} - {to}</span>
     </div>
-    {description && <p class="font-light text-sm mt-2">{description}</p>}
+    {
+      descriptionRaw && (
+        <div class="font-light leading-7 text-md mt-4">
+          <PortableText portableText={descriptionRaw} />
+        </div>
+      )
+    }
   </div>
 </li>
 <style>
   .logo {
     border-radius: 32px;
     height: 60px;
-    width: 60px;
+    min-width: 60px;
   }
 </style>

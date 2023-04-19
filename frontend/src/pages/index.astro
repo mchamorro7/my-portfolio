@@ -22,7 +22,7 @@ const { allProject, allJob } = (await response.json())?.data
 >
   <main class="container mx-auto max-w-5xl">
     <Hero />
-    <LastProjects projects={allProject} />
     <Experience jobs={allJob} />
+    <LastProjects projects={allProject} />
   </main>
 </MainLayout>
