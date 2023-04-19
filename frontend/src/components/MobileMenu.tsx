@@ -55,17 +55,17 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
                   '/'
                 )} block p-4 text-sm text-white`}
                 href="/">
-                Portfolio
+                Home
               </a>
             </li>
             <li className="mb-1">
               <a
                 className={`${isRouteActive(
                   currentPath,
-                  '/about'
+                  '/projects'
                 )} block p-4 text-sm text-white`}
-                href="/about">
-                About
+                href="/projects">
+                Projects
               </a>
             </li>
             <li className="mb-1">
