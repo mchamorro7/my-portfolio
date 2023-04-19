@@ -23,7 +23,7 @@ export const defaultDataQuery = `
     position,
     from,
     to,
-    description
+    descriptionRaw
   }
 }
 `;
