@@ -1,0 +1,32 @@
+---
+import image from '../../public/setup.jpg';
+
+const { title, description, url = Astro.url } = Astro.props
+---
+
+<link rel="canonical" href={url} />
+
+<meta name="apple-mobile-web-app-title" content="mateochamorro.dev">
+<meta name="application-name" content="mateochamorro.dev">
+
+<meta property="og:site_name" content="mateochamorro.dev" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={url} />
+<meta property="og:image" content={image} />
+<meta property="og:image:url" content={image} />
+<meta
+  property="og:image:secure_url"
+  content={image}
+/>
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:alt" content="setup" />
+
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content={image} />
+<meta name="twitter:image:alt" content={title} />
+<meta name="twitter:domain" content="mateochamorro.dev">
