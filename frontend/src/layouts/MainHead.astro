@@ -10,10 +10,12 @@ const { title, description } = Astro.props;
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
   <meta name="description" content={description} />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
   <title>{title}</title>
   
   <Seo {title} {description} />
 
-  <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
-  <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>

@@ -6,12 +6,10 @@ const { pathname: current } = Astro.url
 
 <footer
   class="container mx-auto max-w-5xl flex justify-center py-9 border-t-2 border-white">
-  <a href="/" class={`${isRouteActive(current, '/')} mr-8`}>Home</a>
-  <a href="/projects" class={`${isRouteActive(current, '/projects')} mr-8`}
-    >Projects</a
-  >
-  <a href="/blog" class={`${isRouteActive(current, '/blog')} mr-8`}>Blog</a>
-  <a href="mailto:mateochamo1@gmail.com">Contact</a>
+  <a href="/" class={`${isRouteActive(current, '/')} mr-8`} aria-label="Go to home page">Home</a>
+  <a href="/projects" class={`${isRouteActive(current, '/projects')} mr-8`} aria-label="Go to projects page">Projects</a>
+  <a href="/blog" class={`${isRouteActive(current, '/blog')} mr-8`} aria-label="Go to blog page">Blog</a>
+  <a href="mailto:mateochamo1@gmail.com" aria-label="Contact me by email">Contact</a>
 </footer>
 <style>
   footer a:hover {

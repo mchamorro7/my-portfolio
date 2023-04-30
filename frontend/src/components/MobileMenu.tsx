@@ -11,7 +11,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
   return (
     <>
       <div className="md:hidden flex justify-end">
-        <button onClick={() => setVisible(!visible)}>
+        <button role="button" aria-label="Open mobile menu" onClick={() => setVisible(!visible)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-6 h-6"
@@ -32,7 +32,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
             visible ? 'w-full' : 'w-0'
           } duration-500 fixed top-0 left-0 bottom-0 flex flex-col bg-secondary overflow-y-auto`}>
           <div className="flex justify-end p-6">
-            <button onClick={() => setVisible(!visible)}>
+            <button role="button" aria-label="Close mobile menu"  onClick={() => setVisible(!visible)}>
               <svg
                 className="h-6 w-6 text-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,18 +54,20 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
                   currentPath,
                   '/'
                 )} block p-4 text-sm text-white`}
+                aria-label="Go to home page"
                 href="/">
-                Portfolio
+                Home
               </a>
             </li>
             <li className="mb-1">
               <a
                 className={`${isRouteActive(
                   currentPath,
-                  '/about'
+                  '/projects'
                 )} block p-4 text-sm text-white`}
-                href="/about">
-                About
+                aria-label="Go to projects page"
+                href="/projects">
+                Projects
               </a>
             </li>
             <li className="mb-1">
@@ -74,6 +76,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
                   currentPath,
                   '/blog'
                 )} block p-4 text-sm text-white`}
+                aria-label="Go to blog page"
                 href="/blog">
                 Blog
               </a>
@@ -81,6 +84,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
             <li className="mb-1">
               <a
                 className="block p-4 text-sm text-white"
+                aria-label="Contact me by email"
                 href="mailto:mateochamo1@gmail.com">
                 Contact
               </a>

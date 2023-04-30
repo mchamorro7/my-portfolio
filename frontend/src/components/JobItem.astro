@@ -9,7 +9,7 @@ const logoUrl = logo?.asset?.url
 <li class="flex gap-4 mb-6">
   {
     logo ? (
-      <img class="logo" src={logoUrl} />
+      <img class="logo" width="60" height="60" src={logoUrl} alt={company} />
     ) : (
       <div class="logo bg-slate-200" />
     )
@@ -34,5 +34,7 @@ const logoUrl = logo?.asset?.url
     border-radius: 32px;
     height: 60px;
     min-width: 60px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
   }
 </style>

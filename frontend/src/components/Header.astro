@@ -11,20 +11,20 @@ const { pathname: current } = Astro.url
     <ul
       class="flex px-4 border border-x-neutral-400 border-y-neutral-200 rounded-3xl">
       <li>
-        <a href="/" class={`${isRouteActive(current, '/')} mr-8`}>Home</a>
+        <a href="/" class={`${isRouteActive(current, '/')} mr-8`} aria-label="Go to home page">Home</a>
       </li>
       <li>
         <a
           href="/projects"
-          class={`${isRouteActive(current, '/projects')} mr-8`}>Projects</a
+          class={`${isRouteActive(current, '/projects')} mr-8`} aria-label="Go to projects page">Projects</a
         >
       </li>
       <li>
-        <a href="/blog" class={`${isRouteActive(current, '/blog')} mr-8`}
-          >Blog</a
-        >
+        <a href="/blog" class={`${isRouteActive(current, '/blog')} mr-8`} aria-label="Go to blog page">
+          Blog
+        </a>
       </li>
-      <li><a href="mailto:mateochamo1@gmail.com">Contact</a></li>
+      <li><a href="mailto:mateochamo1@gmail.com" aria-label="Contact me by email">Contact</a></li>
     </ul>
   </nav>
 </header>
