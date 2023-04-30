@@ -5,9 +5,9 @@ const { title, description, date, code, stack } = Astro.props
 <a href={code ?? '#'} aria-label={`Take a look at ${title} project`}>
   <article class="project border border-primary hover:scale-105">
     <div class="p-4">
-      <h5 class="font-title font-regular text-primary text-lg md:text-2xl mb-2">
+      <p class="font-title font-regular text-primary text-lg md:text-2xl mb-2">
         {title}
-      </h5>
+      </p>
       <p class="font-light mb-2">{description}</p>
       <p class="text-xs">{date}</p>
       {
