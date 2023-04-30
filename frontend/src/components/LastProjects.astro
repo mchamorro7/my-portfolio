@@ -15,14 +15,14 @@ const { projects } = Astro.props
 ---
 
 <section class="mb-10">
-  <h2 class="font-title text-2xl md:text-4xl">Last projects</h2>
+  <h3 class="font-title text-2xl md:text-4xl">Last projects</h3>
   <div class="w-10 border-b-4 mt-3 mb-10 border-primary"></div>
   <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4">
     {projects.map((props: Project) => <Project {...props} />)}
   </div>
   <div class="flex justify-center md:justify-end">
-    <a href="/projects" class="text-primary font-light mt-6 hover:opacity-80"
-      >See all</a
-    >
+    <a href="/projects" class="text-primary font-light mt-6 hover:opacity-80" aria-label="See all projects">
+      See all
+    </a>
   </div>
 </section>

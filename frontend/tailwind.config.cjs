@@ -3,8 +3,8 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     fontFamily: {
-      title: ['Montserrat'],
-      body: ['Lato']
+      title: ['Montserrat', 'sans-serif'],
+      body: ['Lato', 'sans-serif']
     },
     extend: {
       colors: {
