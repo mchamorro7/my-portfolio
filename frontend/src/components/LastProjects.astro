@@ -1,15 +1,6 @@
 ---
-import Project from './Project.astro'
-
-interface Project {
-  title: string;
-  description: string;
-  date: string;
-  stack: Array<string>;
-  code?: string;
-  demo?: string;
-  thumbnail?: string;
-}
+import type { ProjectModel } from '@models/index'
+import SneakProject from './SneakProject.astro'
 
 const { projects } = Astro.props
 ---
@@ -18,10 +9,13 @@ const { projects } = Astro.props
   <h3 class="font-title text-2xl md:text-4xl">Last projects</h3>
   <div class="w-10 border-b-4 mt-3 mb-10 border-primary"></div>
   <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4">
-    {projects.map((props: Project) => <Project {...props} />)}
+    {projects.map((props: ProjectModel) => <SneakProject {...props} />)}
   </div>
   <div class="flex justify-center md:justify-end">
-    <a href="/projects" class="text-primary font-light mt-6 hover:opacity-80" aria-label="See all projects">
+    <a
+      href="/projects"
+      class="text-primary font-light mt-6 hover:opacity-80"
+      aria-label="See all projects">
       See all
     </a>
   </div>

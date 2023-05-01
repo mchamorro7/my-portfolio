@@ -27,3 +27,21 @@ export const defaultDataQuery = `
   }
 }
 `;
+
+export const paginateProjectsQuery = (limit: number, offset: number) => `
+{
+  allProject(sort: { _createdAt: ASC },limit: ${limit}, offset: ${offset}) {
+    title,
+    description,
+    date,
+    stack,
+    code,
+    demo,
+    thumbnail {
+      asset {
+        url
+      }
+    }
+  },
+}
+`;

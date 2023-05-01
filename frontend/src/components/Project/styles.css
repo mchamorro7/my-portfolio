@@ -1,0 +1,9 @@
+.project {
+  border-radius: 16px;
+  min-height: 250px;
+}
+
+.badge {
+  border: 0.3px solid theme(colors.primary);
+  border-radius: 10px;
+}
