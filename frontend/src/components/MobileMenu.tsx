@@ -1,4 +1,3 @@
-import { isRouteActive } from '@utils/index'
 import { useState } from 'react'
 
 interface MobileMenuProps {
@@ -50,10 +49,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
           <ul className="p-6">
             <li className="mb-1">
               <a
-                className={`${isRouteActive(
-                  currentPath,
-                  '/'
-                )} block p-4 text-sm text-white`}
+                className={`${currentPath === '/' ? 'active' : ''} block p-4 text-sm text-white`}
                 aria-label="Go to home page"
                 href="/">
                 Home
@@ -61,10 +57,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
             </li>
             <li className="mb-1">
               <a
-                className={`${isRouteActive(
-                  currentPath,
-                  '/projects'
-                )} block p-4 text-sm text-white`}
+                className={`${currentPath === '/projects' ? 'active' : ''} block p-4 text-sm text-white`}
                 aria-label="Go to projects page"
                 href="/projects">
                 Projects
@@ -72,10 +65,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
             </li>
             <li className="mb-1">
               <a
-                className={`${isRouteActive(
-                  currentPath,
-                  '/blog'
-                )} block p-4 text-sm text-white`}
+                className={`${currentPath === '/blog' ? 'active' : ''} block p-4 text-sm text-white`}
                 aria-label="Go to blog page"
                 href="/blog">
                 Blog

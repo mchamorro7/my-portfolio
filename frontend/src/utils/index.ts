@@ -2,9 +2,6 @@ import type { ProjectModel } from '@models/index';
 import { portableTextToHtml } from 'astro-sanity'
 import { paginateProjectsQuery } from './queries';
 
-export const isRouteActive = (currentPath: string, path: string) =>
-  currentPath === path ? 'active' : '';
-
 export const sanityPortableText = (portabletext: Array<Object>) => {
   return portableTextToHtml(portabletext);
 }
