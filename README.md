@@ -1,7 +1,7 @@
 ## This is __my-portfolio__ application :rocket:
 
-![node](https://img.shields.io/badge/-16.12.0-black?style=flat-square&label=node&labelColor=brightgreen)
-![npm](https://img.shields.io/badge/-6.14.15-black?style=flat-square&label=npm&labelColor=green)
+![node](https://img.shields.io/badge/-18.14.1-black?style=flat-square&label=node&labelColor=brightgreen)
+![npm](https://img.shields.io/badge/-9.3.1-black?style=flat-square&label=npm&labelColor=green)
 
 #### Personal website and blog page.
 #### Made with :heart: with these different technologies:
