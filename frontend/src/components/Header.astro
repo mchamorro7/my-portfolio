@@ -15,11 +15,11 @@ const currentPath = Astro.url.pathname;
       <li>
         <a
           href="/projects"
-          class={`${currentPath === '/projects' ? 'active' : ''} mr-8`} aria-label="Go to projects page">Projects</a
+          class={`${currentPath === '/projects/' ? 'active' : ''} mr-8`} aria-label="Go to projects page">Projects</a
         >
       </li>
       <li>
-        <a href="/blog" class={`${currentPath === '/blog' ? 'active' : ''} mr-8`} aria-label="Go to blog page">
+        <a href="/blog" class={`${currentPath === '/blog/' ? 'active' : ''} mr-8`} aria-label="Go to blog page">
           Blog
         </a>
       </li>

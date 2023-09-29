@@ -57,7 +57,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
             </li>
             <li className="mb-1">
               <a
-                className={`${currentPath === '/projects' ? 'active' : ''} block p-4 text-sm text-white`}
+                className={`${currentPath === '/projects/' ? 'active' : ''} block p-4 text-sm text-white`}
                 aria-label="Go to projects page"
                 href="/projects">
                 Projects
@@ -65,7 +65,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ currentPath }) => {
             </li>
             <li className="mb-1">
               <a
-                className={`${currentPath === '/blog' ? 'active' : ''} block p-4 text-sm text-white`}
+                className={`${currentPath === '/blog/' ? 'active' : ''} block p-4 text-sm text-white`}
                 aria-label="Go to blog page"
                 href="/blog">
                 Blog
