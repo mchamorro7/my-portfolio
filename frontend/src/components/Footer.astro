@@ -5,8 +5,8 @@ const currentPath = Astro.url.pathname;
 <footer
   class="container mx-auto max-w-5xl flex justify-center py-9 border-t-2 border-white">
   <a href="/" class={`${currentPath === '/' ? 'active' : ''} mr-8`} aria-label="Go to home page">Home</a>
-  <a href="/projects" class={`${currentPath === '/projects' ? 'active' : ''} mr-8`} aria-label="Go to projects page">Projects</a>
-  <a href="/blog" class={`${currentPath === '/blog' ? 'active' : ''} mr-8`} aria-label="Go to blog page">Blog</a>
+  <a href="/projects" class={`${currentPath === '/projects/' ? 'active' : ''} mr-8`} aria-label="Go to projects page">Projects</a>
+  <a href="/blog" class={`${currentPath === '/blog/' ? 'active' : ''} mr-8`} aria-label="Go to blog page">Blog</a>
   <a href="mailto:mateochamo1@gmail.com" aria-label="Contact me by email">Contact</a>
 </footer>
 <style>
