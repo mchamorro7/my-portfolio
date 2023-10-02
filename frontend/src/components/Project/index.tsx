@@ -11,7 +11,7 @@ const Project: React.FC<ProjectModel> = ({
   stack
 }) => {
   return (
-    <a href={code ?? '#'} aria-label={`Take a look at ${title} project`}>
+    <a href={code ?? '#'} target="_blank" aria-label={`Take a look at ${title} project`}>
       <article className="project border border-primary hover:scale-105">
         <div className="p-4">
           <p className="font-title font-regular text-primary text-lg md:text-2xl mb-2">
