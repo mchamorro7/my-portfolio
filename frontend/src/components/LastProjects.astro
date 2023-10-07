@@ -11,12 +11,12 @@ const { projects } = Astro.props
   <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4">
     {projects.map((props: ProjectModel) => <SneakProject {...props} />)}
   </div>
-  <div class="flex justify-center md:justify-end">
-    <a
+  <div class="flex justify-center mt-6 md:justify-end">
+    <!-- <a
       href="/projects"
-      class="text-primary font-light mt-6 hover:opacity-80"
+      class="text-primary font-light hover:opacity-80"
       aria-label="See all projects">
       See all
-    </a>
+    </a> -->
   </div>
 </section>

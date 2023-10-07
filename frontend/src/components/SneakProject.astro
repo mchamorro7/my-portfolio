@@ -2,9 +2,9 @@
 const { title, description, date, code, stack } = Astro.props
 ---
 
-<a href={code ?? '#'} target="_blank" aria-label={`Take a look at ${title} project`}>
+<a class="flex" href={code ?? '#'} target="_blank" aria-label={`Take a look at ${title} project`}>
   <article class="project border border-primary hover:scale-105">
-    <div class="p-4">
+    <div class="p-4 h-full flex flex-col">
       <p class="font-title font-regular text-primary text-lg md:text-2xl mb-2">
         {title}
       </p>
@@ -12,7 +12,7 @@ const { title, description, date, code, stack } = Astro.props
       <p class="text-xs">{date}</p>
       {
         stack.length > 0 && (
-          <div class="flex flex-wrap gap-1 mt-4">
+          <div class="flex flex-wrap gap-1 pt-4 mt-auto">
             {stack.map((tech: string) => (
               <p class="badge px-1 text-primary">{tech}</p>
             ))}

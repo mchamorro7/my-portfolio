@@ -11,16 +11,16 @@ const Project: React.FC<ProjectModel> = ({
   stack
 }) => {
   return (
-    <a href={code ?? '#'} target="_blank" aria-label={`Take a look at ${title} project`}>
+    <a className="flex" href={code ?? '#'} target="_blank" aria-label={`Take a look at ${title} project`}>
       <article className="project border border-primary hover:scale-105">
-        <div className="p-4">
+        <div className="p-4 h-full flex flex-col">
           <p className="font-title font-regular text-primary text-lg md:text-2xl mb-2">
             {title}
           </p>
           <p className="font-light mb-2">{description}</p>
           <p className="text-xs">{date}</p>
           {stack.length > 0 && (
-            <div className="flex flex-wrap gap-1 mt-4">
+            <div className="flex flex-wrap gap-1 pt-4 mt-auto">
               {stack.map((tech: string) => (
                 <p className="badge px-1 text-primary">{tech}</p>
               ))}
