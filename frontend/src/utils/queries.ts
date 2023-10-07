@@ -30,7 +30,7 @@ export const defaultDataQuery = `
 
 export const paginateProjectsQuery = (limit: number, offset: number) => `
 {
-  allProject(sort: { _createdAt: ASC },limit: ${limit}, offset: ${offset}) {
+  allProject(sort: { _createdAt: DESC },limit: ${limit}, offset: ${offset}) {
     title,
     description,
     date,
