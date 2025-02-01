@@ -17,6 +17,9 @@ importers:
       '@astrojs/ts-plugin':
         specifier: ^1.10.4
         version: 1.10.4
+      '@sanity/client':
+        specifier: ^6.27.2
+        version: 6.27.2
       '@types/react':
         specifier: ^19.0.8
         version: 19.0.8
@@ -993,6 +996,10 @@ packages:
 
   '@sanity/client@5.4.2':
     resolution: {integrity: sha512-M/ebzTGwYq+NDGMfBWxKtwtmCRJbBvXxAIQXu/J0vxnr8mXKw8gBQ7GaG0tI4WJ54w5sI6pnrD6mPiKdRHVNYw==}
+    engines: {node: '>=14.18'}
+
+  '@sanity/client@6.27.2':
+    resolution: {integrity: sha512-x5KaN5atPnEFa3GGSH3YKSAYh1MAECvEs9o+NSLd5W19imxvSxPquQBv0Q60Zdsg6iaTJPAAa79Ak5Xyg2FHvA==}
     engines: {node: '>=14.18'}
 
   '@sanity/eventsource@5.0.2':
@@ -4625,6 +4632,14 @@ snapshots:
     optional: true
 
   '@sanity/client@5.4.2':
+    dependencies:
+      '@sanity/eventsource': 5.0.2
+      get-it: 8.6.7
+      rxjs: 7.8.1
+    transitivePeerDependencies:
+      - debug
+
+  '@sanity/client@6.27.2':
     dependencies:
       '@sanity/eventsource': 5.0.2
       get-it: 8.6.7
