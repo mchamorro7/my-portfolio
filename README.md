@@ -1,6 +1,6 @@
 ## This is __my-portfolio__ application :rocket:
 
-![node](https://img.shields.io/badge/-18.14.1-black?style=flat-square&label=node&labelColor=brightgreen)
+![node](https://img.shields.io/badge/-v20-black?style=flat-square&label=node&labelColor=brightgreen)
 ![npm](https://img.shields.io/badge/-9.3.1-black?style=flat-square&label=npm&labelColor=green)
 
 #### Personal website and blog page.
