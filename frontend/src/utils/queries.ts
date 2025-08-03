@@ -1,6 +1,6 @@
 export const defaultDataQuery = `
 {
-  allProject(limit: 4) {
+  allProject(sort: { _createdAt: DESC }, limit: 4) {
     title,
     description,
     date,
